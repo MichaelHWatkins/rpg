@@ -27,5 +27,11 @@ describe('Puppy', () => {
   test('should add 3 to the cutenessPoints value', () => {
     newPuppy.puppyEyes();
     expect(newPuppy.cutenessPoints).toEqual(13)
-  })
+  });
+  
+  test('should add a psudo random number between 1 and up to and including 4 to the affectionPoints value', () => {
+    newPuppy.affectionAction();
+    expect(newPuppy.affectionPoints).toBeLessThanOrEqual(4);
+    expect(newPuppy.affectionPoints).toBeGreaterThanOrEqual(1);
+  });
 });
