@@ -26,4 +26,9 @@ export default class Puppy {
   playWithToy() {
     this.energyPoints -= 2;
   }
+
+  carpetTug() {
+    this.energyPoints -= 1;
+    this.affectionPoints -= 2;
+  }
 }

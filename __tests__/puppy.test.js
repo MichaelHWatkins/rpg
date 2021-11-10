@@ -39,4 +39,10 @@ describe('Puppy', () => {
     newPuppy.playWithToy();
     expect(newPuppy.energyPoints).toEqual(8);
   });
+  
+  test('should subtract 1 from the energyPoints value and 2 from the affectionPoints value', () => {
+    newPuppy.carpetTug();
+    expect(newPuppy.energyPoints).toEqual(9);
+    expect(newPuppy.affectionPoints).toEqual(-2);
+  });
 });
