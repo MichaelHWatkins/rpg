@@ -22,4 +22,8 @@ export default class Puppy {
   affectionAction() {
     this.affectionPoints += Math.floor(Math.random() * 4 ) + 1;
   }
+
+  playWithToy() {
+    this.energyPoints -= 2;
+  }
 }
