@@ -14,4 +14,8 @@ export default class Puppy {
   eatTreat() {
     this.energyPoints += 3;
   }
+
+  puppyEyes() {
+    this.cutenessPoints += 3;
+  }
 }
