@@ -16,6 +16,11 @@ describe('Puppy', () => {
 
   test('should subtract 2 from the cutenessPoints value', () => {
     newPuppy.puppyScratch();
-    expect(this.cutenessPoints).toEqual(8);
+    expect(newPuppy.cutenessPoints).toEqual(8);
+  });
+
+  test('should add 3 to the energyPoints value', () => {
+    newPuppy.eatTreat();
+    expect(newPuppy.energyPoints).toEqual(13);
   });
 });
