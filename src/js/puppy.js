@@ -5,5 +5,9 @@ export default class Puppy {
     this.cutenessPoints = cutenessPoints;
     this.energyPoints = energyPoints;
     this.affectionPoints = affectionPoints; 
-  }    
+  }
+
+  puppyScratch() {
+    this.cutenessPoints -= 2;
+  }
 }
