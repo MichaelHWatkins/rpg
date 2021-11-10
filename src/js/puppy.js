@@ -12,6 +12,6 @@ export default class Puppy {
   }
 
   eatTreat() {
-    this.energyPoints -= 3;
+    this.energyPoints += 3;
   }
 }
