@@ -23,4 +23,9 @@ describe('Puppy', () => {
     newPuppy.eatTreat();
     expect(newPuppy.energyPoints).toEqual(13);
   });
+  
+  test('should add 3 to the cutenessPoints value', () => {
+    newPuppy.puppyEyes();
+    expect(newPuppy.cutenessPoints).toEqual(13)
+  })
 });
